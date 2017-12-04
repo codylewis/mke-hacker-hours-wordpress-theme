@@ -1,0 +1,141 @@
+/*
+Theme Name: Milwaukee Hacker Hours
+Theme URI: https://wordpress.org/themes/twentysixteen/
+Author: Cody Lewis
+Author URI: https://codylewis.me/
+Version: 1.0
+*/
+
+/* Typography
+-------------------------------------------------- */
+
+* {
+    font-family: 'Lato';
+}
+
+main > h1 {
+    color: white;
+    border-bottom: 2px solid white;
+    margin-bottom: 25px;
+}
+
+/* Nav
+-------------------------------------------------- */
+
+.navbar {
+    background: url('/wp-content/themes/mke-hacker-hours/img/background.jpg');
+}
+
+.navbar hr {
+    border-top-color: rgba(255, 255, 255, .1);
+}
+
+/* Fixes to nav when logged in to WordPress
+-------------------------------------------------- */
+
+body.logged-in nav.fixed-top {
+    margin-top: 46px;
+}
+
+@media (min-width: 768px) {
+    body.logged-in nav.fixed-top {
+        margin-top: 32px;
+    }
+}
+
+/* Layout
+-------------------------------------------------- */
+
+body {
+    background-color: #0d223f;
+    padding-bottom: 60px;
+}
+
+body > .container {
+    padding: 80px 15px 0;
+}
+
+body.logged-in > .container {
+    padding-top: 126px;
+}
+
+.jumbotron {
+    background-color: white;
+}
+
+@media (min-width: 768px) {
+    body {
+        /* Margin bottom by footer height */
+        padding-bottom: 90px;
+    }
+
+    body > .container {
+        padding-top: 96px;
+    }
+
+    body.logged-in > .container {
+        padding-top: 130px;
+    }
+
+    .jumbotron {
+        padding: 3rem 2rem;
+    }
+}
+
+/* Projects page
+-------------------------------------------------- */
+
+.project-preview h2.give-me-ellipsis {
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-height: 33.6px; /* fallback */
+    max-height: calc(33.6px * 2); /* fallback */
+}
+
+.project-preview .card-text.give-me-ellipsis {
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-height: 24px; /* fallback */
+    max-height: calc(24px * 3); /* fallback */
+}
+
+.project-preview a {
+    text-decoration: none;
+    color: initial;
+}
+
+.project-preview a:hover {
+    border-bottom: 2px solid #868e96;
+    transition: 150ms all;
+}
+
+/* Helper classes
+-------------------------------------------------- */
+
+.give-me-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.display-5 {
+    font-size: 2.75rem;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #0a1b32;
+    text-align: center;
+}
+
