@@ -11,11 +11,14 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
         <?php the_content(); ?>
     </div>
 
-    <div class="jumbotron embed-responsive embed-responsive embed-responsive-4by3">
-        <iframe src="<?php the_field('iframe_url'); ?>" class="embed-responsive-item"></iframe>
-    </div>
+    <?php
+    $iFrameURL = get_field('iframe_url');
+    if ($iFrameURL) : ?>
+        <div class="jumbotron embed-responsive embed-responsive embed-responsive-4by3">
+            <iframe src="<?php echo $iFrameURL; ?>" class="embed-responsive-item"></iframe>
+        </div>
+    <?php endif; ?>
 
-<?php // End the loop.
-endwhile; endif; ?>
+<?php endwhile; endif; ?>
 
 <?php get_footer(); ?>

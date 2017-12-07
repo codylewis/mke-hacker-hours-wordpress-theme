@@ -37,11 +37,11 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <?php foreach ([
-                                       'Home' => '',
                                        'How It Works' => 'how-it-works',
                                        'Policies' => 'policies',
                                        'Projects' => 'projects'
                                    ] as $navText => $path) :
+
                         $active = trim(get_page_uri()) === $path;
                         ?>
                         <li class="nav-item <?php echo $active ? 'active' : '' ?>">
