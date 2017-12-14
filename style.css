@@ -23,7 +23,8 @@ main > h1 {
 -------------------------------------------------- */
 
 .navbar {
-    background: url('/wp-content/themes/mke-hacker-hours/img/background.jpg');
+    /*noinspection CssUnknownTarget*/
+    background: url('/wp-content/themes/mke-hacker-hours-wordpress-theme/img/background.jpg');
 }
 
 .navbar hr {

@@ -15,6 +15,8 @@
     <meta name="viewport" content="width=device-width">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+    <title>MKE Hacker Hours</title>
+
     <?php wp_head(); ?>
 
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -3,11 +3,13 @@ Trimmed down classes from the follow layout https://codex.wordpress.org/Customiz
 */
 
 body.login {
-    background-image: url('/wp-content/themes/mke-hacker-hours/img/background-inverted.jpg');
+    /*noinspection CssUnknownTarget*/
+    background-image: url('/wp-content/themes/mke-hacker-hours-wordpress-theme/img/background-inverted.jpg');
 }
 
 body.login div#login h1 a {
-    background-image: url('/wp-content/themes/mke-hacker-hours/img/square_small.png');
+    /*noinspection CssUnknownTarget*/
+    background-image: url('/wp-content/themes/mke-hacker-hours-wordpress-theme/img/square_small.png');
     border-radius: .25rem;
 }
 
